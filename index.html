@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <link rel="stylesheet" href="css/sample.css">
+    <title>じゃんけん</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>❤️幸せを運ぶ鳩❤️</h1>
+        <h2>今日のあなたに必要な言葉を、美しい鳩が届けます<br>
+        なりたい自分を思い浮かべながら鳩をクリックしてね</h2>
+        <!-- <button onclick="location.href='janken_zyokyu.html'">上級編はこちら！</button> -->
+    </header>
+
+    <main>
+        <ul>
+            <li id="a_btn"><img src = ./img/a.png width="250px"></li>
+            <li id="b_btn"><img src = ./img/b.png width="250px"></li>
+            <li id="c_btn"><img src = ./img/c.png width="250px"></li>
+            <li id="d_btn"><img src = ./img/d.png width="250px"></li>
+            <li id="e_btn"><img src = ./img/e.png width="250px"></li>
+        </ul>
+        <div class="toi">届けてくれるのは・・・？</div>
+        <div class="nani"><span >
+            <ul>
+                <li id="hito" width="200px"height="200px">誰かな？</li>
+            </ul>
+        </span></div>
+        <div class="kekka">幸せを育む言葉は・・・？
+        <b></b><div id="judgment"></div>
+        </div>
+
+
+    </main>
+
+    <footer></footer>
+    <script>
+
+    // aのパターン
+        // 1ー①クリックで1^5の乱数を出す
+        $("#a_btn").on("click",function(){
+    
+        const r = Math.ceil(Math.random()*5);
+        
+        //1ー②PCの出しての　If分岐処
+        
+        let view = "";
+        let view2 = ""
+        
+        
+        if(r==1){
+        view= '<img src = ./img/a_hito.png>' , view2='<img src = ./img/a_kotoba.png>';
+        }
+
+        if(r==2){
+        view= '<img src = ./img/b_hito.png>', view2='<img src = ./img/b_kotoba.png>';
+        }
+
+        if(r==3){
+        view= '<img src = ./img/c_hito.png>',view2='<img src = ./img/c_kotoba.png>';
+        }
+
+        if(r==4){
+        view= '<img src = ./img/d_hito.png>',view2='<img src = ./img/d_kotoba.png>';
+        }
+
+        if(r==5){
+        view= '<img src = ./img/e_hito.png>',view2='<img src = ./img/e_kotoba.png>';
+        }
+
+
+         // 1ー③PCの出し手の表示処理
+         $("#hito").html(view);
+         $("#judgment").html(view2);
+
+        });
+
+    
+    // bのパターン
+        
+        $("#b_btn").on("click",function(){
+    
+    const r = Math.ceil(Math.random()*5);
+    
+    //1ー②PCの出しての　If分岐処
+    
+    let view = "";
+    let view2 = ""
+    
+    
+    if(r==1){
+    view= '<img src = ./img/a_hito.png>' , view2='<img src = ./img/a_kotoba.png>';
+    }
+
+    if(r==2){
+    view= '<img src = ./img/b_hito.png>', view2='<img src = ./img/b_kotoba.png>';
+    }
+
+    if(r==3){
+    view= '<img src = ./img/c_hito.png>',view2='<img src = ./img/c_kotoba.png>';
+    }
+
+    if(r==4){
+    view= '<img src = ./img/d_hito.png>',view2='<img src = ./img/d_kotoba.png>';
+    }
+
+    if(r==5){
+    view= '<img src = ./img/e_hito.png>',view2='<img src = ./img/e_kotoba.png>';
+    }
+
+
+     // 1ー③PCの出し手の表示処理
+     $("#hito").html(view);
+     $("#judgment").html(view2);
+
+    });
+
+
+    // Cのパターン
+
+    $("#c_btn").on("click",function(){
+    
+    const r = Math.ceil(Math.random()*5);
+    
+    //1ー②PCの出しての　If分岐処
+    
+    let view = "";
+    let view2 = ""
+    
+    
+    if(r==1){
+    view= '<img src = ./img/a_hito.png>' , view2='<img src = ./img/a_kotoba.png>';
+    }
+
+    if(r==2){
+    view= '<img src = ./img/b_hito.png>', view2='<img src = ./img/b_kotoba.png>';
+    }
+
+    if(r==3){
+    view= '<img src = ./img/c_hito.png>',view2='<img src = ./img/c_kotoba.png>';
+    }
+
+    if(r==4){
+    view= '<img src = ./img/d_hito.png>',view2='<img src = ./img/d_kotoba.png>';
+    }
+
+    if(r==5){
+    view= '<img src = ./img/e_hito.png>',view2='<img src = ./img/e_kotoba.png>';
+    }
+
+
+     // 1ー③PCの出し手の表示処理
+     $("#hito").html(view);
+     $("#judgment").html(view2);
+
+    });
+
+    // d のパターン
+    $("#d_btn").on("click",function(){
+    
+    const r = Math.ceil(Math.random()*5);
+    
+    //1ー②PCの出しての　If分岐処
+    
+    let view = "";
+    let view2 = ""
+    
+    
+    if(r==1){
+    view= '<img src = ./img/a_hito.png>' , view2='<img src = ./img/a_kotoba.png>';
+    }
+
+    if(r==2){
+    view= '<img src = ./img/b_hito.png>', view2='<img src = ./img/b_kotoba.png>';
+    }
+
+    if(r==3){
+    view= '<img src = ./img/c_hito.png>',view2='<img src = ./img/c_kotoba.png>';
+    }
+
+    if(r==4){
+    view= '<img src = ./img/d_hito.png>',view2='<img src = ./img/d_kotoba.png>';
+    }
+
+    if(r==5){
+    view= '<img src = ./img/e_hito.png>',view2='<img src = ./img/e_kotoba.png>';
+    }
+
+
+     // 1ー③PCの出し手の表示処理
+     $("#hito").html(view);
+     $("#judgment").html(view2);
+
+    });
+
+    // eのパターン
+    $("#e_btn").on("click",function(){
+    
+    const r = Math.ceil(Math.random()*5);
+    
+    //1ー②PCの出しての　If分岐処
+    
+    let view = "";
+    let view2 = ""
+    
+    
+    if(r==1){
+    view= '<img src = ./img/a_hito.png>' , view2='<img src = ./img/a_kotoba.png>';
+    }
+
+    if(r==2){
+    view= '<img src = ./img/b_hito.png>', view2='<img src = ./img/b_kotoba.png>';
+    }
+
+    if(r==3){
+    view= '<img src = ./img/c_hito.png>',view2='<img src = ./img/c_kotoba.png>';
+    }
+
+    if(r==4){
+    view= '<img src = ./img/d_hito.png>',view2='<img src = ./img/d_kotoba.png>';
+    }
+
+    if(r==5){
+    view= '<img src = ./img/e_hito.png>',view2='<img src = ./img/e_kotoba.png>';
+    }
+
+
+     // 1ー③PCの出し手の表示処理
+     $("#hito").html(view);
+     $("#judgment").html(view2);
+
+    });
+
+
+    
+
+
+    </script>
+</body>
+
+</html>
